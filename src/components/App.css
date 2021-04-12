@@ -1,1 +1,6 @@
 /* Styles go here */
+.wrapper{
+    display:grid;
+    height:auto;
+    place-items:center
+  }

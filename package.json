@@ -1,23 +1,25 @@
 {
-  "name": "eth-marketplace",
+  "name": "eth-pethelper",
   "version": "0.1.0",
-  "description": "An Ethereum Marketplace",
-  "author": "gregory@dappuniversity.com",
+  "description": "An Ethereum Pet Helper Dapp",
+  "author": "davidandrescuentasmar@gmail.com",
   "dependencies": {
+    "autoprefixer": "^10.2.5",
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
     "babel-preset-es2015": "6.24.1",
     "babel-preset-stage-2": "6.24.1",
     "babel-preset-stage-3": "6.24.1",
     "babel-register": "6.26.0",
-    "bootstrap": "4.3.1",
     "chai": "4.2.0",
     "chai-as-promised": "7.1.1",
     "chai-bignumber": "3.0.0",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
     "react": "16.8.4",
-    "react-bootstrap": "1.0.0-beta.5",
     "react-dom": "16.8.4",
     "react-scripts": "2.1.3",
+    "tailwindcss": "^2.1.1",
     "truffle": "5.0.5",
     "web3": "1.0.0-beta.55"
   },
@@ -25,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
+    "build:watch": "postcss src/styles/tailwind.css -o src/styles/main.css --watch"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +39,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {}
 }
